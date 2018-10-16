@@ -1,0 +1,70 @@
+ //to reset element-ui default css
+$maincolor: #16afa8;
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+.el-dialog{
+  margin: 0 auto 50px;
+}
+.el-dialog__header{
+  border-bottom: 1px solid #ebeef5;
+}
+.el-dialog__body{
+  padding:20px 
+}
+
+.pagination-container{
+  margin:20px;
+  text-align:center;
+}
+
+.el-btn-col{
+  margin: 20px 0;
+  .el-btn-col-box{
+    text-align:center;
+    .el-button{
+      padding: 12px 20px;
+    }
+  }
+}
+
+.el-button--primary,.el-button--primary:focus,.el-button--primary:hover{
+  background-color: $maincolor;
+  border-color: $maincolor;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: $maincolor;
+}
+.el-pager li.active{
+  color: $maincolor;
+}
+.el-menu-item.is-active{
+  color: $maincolor;
+}

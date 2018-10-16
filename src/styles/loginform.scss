@@ -1,0 +1,144 @@
+$bg: rgb(3, 145, 139);
+$dark_gray: #889aa4;
+$light_gray: #eee;
+$light_black: #555;
+
+.login-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $bg;
+  background-image: url(/static/login_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  .logo-wrapper{
+    padding: 20px 30px;
+    background-color: $bg;
+  }
+  .step-wrapper{
+    margin-bottom:30px;
+    .el-step__head.is-process{
+      color: $light_black;
+      border-color: $light_gray;
+    }
+    .el-step__title.is-process{
+      color: $light_gray;
+    }
+    .el-step__description.is-process{
+      color: $light_gray;
+    }
+    .el-step__icon{
+      width:40px;
+      height:40px;
+      .el-step__icon-inner{
+        font-size:16px;
+      }
+    }
+  }
+  .step-contain{
+    .importTip{
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .mainTip{
+      color:$light_gray;
+    }
+    .smallTip{
+      color:$light_gray;
+      line-height:16px;
+      font-size:13px;
+    }
+  }
+  .login-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    width: 520px;
+    padding: 50px 35px 15px 35px;
+    margin: 120px auto;
+    border-radius: 4px;
+    background-color: rgba(0,32,31,.6);
+    box-shadow: 1px 1px 18px 6px rgba(24, 24, 24, .4);
+    .log-btn.el-button {
+      width:100%;
+    }
+  }
+  .el-input {
+    display: inline-block;
+    height: 47px;
+    width: 85%;
+    input {
+      background: transparent;
+      border: 0px;
+      -webkit-appearance: none;
+      border-radius: 0px;
+      padding: 12px 5px 12px 15px;
+      color: $light_gray;
+      height: 47px;
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $bg inset !important;
+        -webkit-text-fill-color: #fff !important;
+      }
+    }
+  }
+  .el-form-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #ddd;
+  }
+  .el-form-find {
+    border: none;
+    background: none;
+    margin-top: -20px;
+  }
+  .code-btn{
+    width: 92%;
+    .el-input-group__append{
+      padding: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 140px;
+      img{
+        width: 140px;
+        height:42px;
+        cursor: pointer;
+      }
+      .el-button{
+        width: 100%;
+        margin:0;
+        padding:15px 20px;
+      }
+    }
+  }
+  .svg-container {
+    padding: 6px 5px 6px 15px;
+    color: $dark_gray;
+    vertical-align: middle;
+    width: 30px;
+    display: inline-block;
+    &_login {
+      font-size: 20px;
+    }
+  }
+  .title {
+    font-size: 26px;
+    font-weight: 400;
+    color: $light_gray;
+    margin: 0px auto 40px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  .show-pwd {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 16px;
+    color: $dark_gray;
+    cursor: pointer;
+    user-select: none;
+  }
+}
